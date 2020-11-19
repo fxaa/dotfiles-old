@@ -1,0 +1,15 @@
+chrissicool/zsh-256color
+mafredri/zsh-async
+eendroroy/zed-zsh
+changyuheng/fz
+hschne/fzf-git
+joshskidmore/zsh-fzf-history-search
+davidde/git
+laggardkernel/zsh-iterm2
+reegnz/jq-zsh-plugin
+zpm-zsh/ssh
+ohmyzsh/ohmyzsh path:plugins/cargo
+ohmyzsh/ohmyzsh path:plugins/npm
+Aloxaf/fzf-tab
+zsh-users/zsh-autosuggestions
+zdharma/fast-syntax-highlighting

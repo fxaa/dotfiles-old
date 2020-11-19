@@ -1,0 +1,6 @@
+source ~/.shell/functions.sh
+source ~/.shell/aliases.sh
+source ~/.shell/variables.sh
+source ~/.shell/path.sh
+
+eval "$(starship init bash)"

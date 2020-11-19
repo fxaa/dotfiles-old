@@ -1,0 +1,13 @@
+autoload -Uz compinit
+compinit
+
+source ~/.shell/functions.sh
+source ~/.shell/aliases.sh
+source ~/.shell/variables.sh
+source ~/.shell/path.sh
+
+source ~/.shell/zsh/functions.zsh
+
+source ~/.shell/zsh/apply-antibodies.sh
+
+eval "$(starship init zsh)"

@@ -1,0 +1,85 @@
+set expandtab
+set number
+set shiftwidth=4
+set smartindent
+set softtabstop=4
+set tabstop=4
+
+nnoremap <leader>s :ToggleWorkspace<CR>
+
+if &compatible
+  set nocompatible
+endif
+
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/usr/local/opt/fzf
+
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('wsdjeg/dein-ui.vim')
+
+  """ general
+  "" utils
+  call dein#add('junegunn/fzf')
+  call dein#add('junegunn/fzf.vim')
+
+  "" editing 
+  call dein#add('tpope/vim-surround')
+  call dein#add('mbbill/undotree')
+
+  " code
+  call dein#add('scrooloose/nerdcommenter')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('junkblocker/patchreview-vim')
+
+  "" UI
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('yuttie/comfortable-motion.vim')
+  call dein#add('preservim/nerdtree')
+  call dein#add('ryanoasis/vim-devicons')
+  call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+
+  "" IDE
+  " core
+  call dein#add('vim-ctrlspace/vim-ctrlspace')
+  call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+  call dein#add('neoclide/coc-git')
+  call dein#add('neoclide/coc-prettier')
+
+  " vim
+  call dein#add('iamcco/coc-vimlsp')
+  
+  " rust
+  call dein#add('phildawes/racer')
+
+  " java
+  call dein#add('neoclide/coc-java')
+
+  " typescript
+  call dein#add('neoclide/coc-tsserver')
+  call dein#add('neoclide/coc-jest')
+  call dein#add('neoclide/coc-eslint')
+
+  " frontend
+  call dein#add('neoclide/coc-vetur')
+
+  " misc
+  call dein#add('josa42/coc-sh')
+  call dein#add('neoclide/coc-yaml')
+  call dein#add('neoclide/coc-json')
+  call dein#add('neoclide/coc-highlight')
+
+  call dein#end()
+  call dein#save_state()
+endif
+
+filetype plugin indent on
+syntax enable
+
