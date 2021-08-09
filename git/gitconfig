@@ -120,13 +120,22 @@
 [color] 
  ui = auto
 [color "branch"]
- current = magenta reverse
- local = green bold 
- remote = red bold
+	current = 6 normal bold reverse
+	local = 6 normal bold
+	remote = 5 normal bold
+	upstream = 5 normal bold
+	plain = 6 normal bold
 [color "status"]
- added = green
- changed = cyan
- untracked = red 
+	added = 2 normal
+	changed = 3 normal
+	untracked = normal dim
+	unmerged = 1 normal
+	nobranch = 1 0 bold
+	updated = 2 normal
+	localbranch = 6 normal bold
+	header = normal
+	remotebranch = 5 normal bold
+	branch = 6 normal bold
 [color "diff"]
  meta = black bold
  frag = magenta bold 
@@ -134,5 +143,29 @@
  plain = black dim
  new = green ul 
  whitespaces = red reverse
+	whitespace = normal
+	commit = 3 0
+	func = 2 normal bold
 [commit]
  template = ~/.gitmessage
+[color "decorate"]
+	HEAD = 6 normal bold italic
+	remotebranch = 5 normal bold
+	grafted = 1 0 bold
+	tag = 3 0 bold
+	stash = normal
+	branch = 6 normal bold
+[color "grep"]
+	filename = 7 normal
+	function = 2 normal bold
+	column = normal
+	linenumber = normal
+[color "interactive"]
+	header = normal
+	help = normal
+	error = 1 0 bold
+[color "remote"]
+	success = 2 normal
+	error = 1 normal
+	hint = normal dim
+	warning = 3 normal

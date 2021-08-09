@@ -3,14 +3,11 @@
       create: true
       relink: true
 
-- clean: ["~", "~/.config", "~/.Brewfile"]
+- clean: ["~", "~/.config"]
 
 - link:
     # git
     ~/.gitconfig: git/gitconfig
-
-    # brew (pt 1/3)
-    ~/.Brewfile: brew/Brewfile
 
     # shells
     ~/.config/fish/config.fish: shell/fish/config.fish
@@ -25,14 +22,14 @@
     # editors
     ~/.vimrc: vim/vimrc
 
-# brew (pt 2/3)
-- shell:
-    - brew -v || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-- brewfile:
-    file: brew/Brewfile
+- create:
+    - ~/.zsh-plugins
 
-- shell:
-    - antibody bundle < ~/.shell/zsh/antibodies > ~/.shell/zsh/apply-antibodies.sh
+# - shell:
+#     - sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+# - shell:
+#     - fzf --version || git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 
 - shell:
     - git submodule sync --recursive

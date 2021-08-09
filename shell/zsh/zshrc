@@ -1,13 +1,16 @@
-autoload -Uz compinit
-compinit
+source ~/.shell/zsh/znap-setup.zsh
 
+source ~/.zsh-plugins/zsh-snap/znap.zsh
+
+source ~/.shell/zsh/znap-plugins.zsh
+
+source ~/.shell/zsh/functions.zsh
 source ~/.shell/functions.sh
 source ~/.shell/aliases.sh
 source ~/.shell/variables.sh
 source ~/.shell/path.sh
 
-source ~/.shell/zsh/functions.zsh
+znap eval starship 'starship init zsh'
+znap prompt
 
-source ~/.shell/zsh/apply-antibodies.sh
-
-eval "$(starship init zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,7 +1,7 @@
 awsauth-help () {
     echo
     echo "Usage:"
-    echo "awsauth [profile]"
+    echo "      awsauth [profile]"
     echo
 }
 
@@ -34,5 +34,6 @@ awsauth () {
         fi
     done
 
-    awsauth $awsauth_flags[@]
+    #disabled since this doesn't exist yet
+    #get-aws-creds $awsauth_flags[@]
 }

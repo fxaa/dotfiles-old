@@ -1,7 +1,0 @@
-brew "git"
-brew "fish"
-brew "tmux"
-brew "neovim", args: ["HEAD"]
-brew "fzf"
-brew "starship"
-
