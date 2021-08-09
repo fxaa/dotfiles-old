@@ -3,31 +3,5 @@ brew "fish"
 brew "tmux"
 brew "neovim", args: ["HEAD"]
 brew "fzf"
-brew "antibody"
 brew "starship"
 
-brew "mas"
-mas "Slack", id: 803453959
-mas "Magnet", id: 441258766
-mas "LastPass Password Manager", id: 926036361
-
-tap "homebrew/cask"
-cask "lastfm"
-cask "iterm2"
-cask "flux"
-cask "postman"
-cask "sublime-text"
-
-tap "railwaycat/emacsmacport"
-cask "emacs-mac"
-
-tap "homebrew/cask-fonts"
-cask "font-iosevka"
-cask "font-iosevka-nerd-font"
-cask "font-jetbrains-mono"
-cask "font-jetbrains-mono-nerd-font"
-cask "font-hack"
-cask "font-hack-nerd-font"
-cask "font-fira-code"
-cask "font-fira-code-nerd-font"
-cask "font-cascadia-code"
