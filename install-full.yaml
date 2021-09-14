@@ -1,0 +1,43 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    brewfile:
+      stdout: false
+      stderr: false
+      include: ["tap", "brew", "cask", "mas"]
+  
+- clean: ["~", "~/.config"]
+
+- link:
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global:
+    
+    ~/.config/fish/config.fish: shell/fish/config.fish
+    ~/.config/starship.toml: shell/starship/starship.toml
+
+    ~/.shell:
+    ~/.bash_profile: shell/bash/bash_profile
+    ~/.bashrc: shell/bash/bashrc
+    ~/.zshrc: shell/zsh/zshrc
+
+    ~/.ssh/config: ssh/config
+
+    ~/.config/nvim/init.vim: vim/nvim/init.vim
+    ~/.vim/remote: vim/remote
+
+- link:
+    ~/.Brewfile:
+
+- brewfile:
+    file: Brewfile
+
+- create:
+    - ~/.cache/dein
+
+# CLI tools
+- shell:
+    - "xcode-select --print-path > /dev/null || xcode-select --install"
+
+- shell:
+    - git submodule sync --recursive

@@ -1,0 +1,36 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~", "~/.config"]
+
+- link:
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global:
+    
+    ~/.config/fish/config.fish: shell/fish/config.fish
+    ~/.config/starship.toml: shell/starship/starship.toml
+
+    ~/.shell:
+    ~/.bash_profile: shell/bash/bash_profile
+    ~/.bashrc: shell/bash/bashrc
+    ~/.zshrc: shell/zsh/zshrc
+
+    ~/.ssh/config: ssh/config
+
+    ~/.config/nvim/init.vim: vim/nvim/init.vim
+    ~/.vim/remote: vim/remote
+
+    ~/.Brewfile:
+
+- create:
+  - ~/.cache/dein
+
+- shell:
+  - git submodule sync --recursive
+  - git update-submodules
+  - >
+    git cleanall -f
+    shell/zsh/remote
+    vim/remote
