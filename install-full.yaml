@@ -34,6 +34,7 @@
 
 - create:
     - ~/.cache/dein
+    - ~/.local/share/fonts
 
 # CLI tools
 - shell:

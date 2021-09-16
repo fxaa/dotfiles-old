@@ -1,11 +1,12 @@
-source ~/.shell/zsh/znap-setup.zsh
 source ~/.shell/zsh/remote/zsh-snap/znap.zsh
 source ~/.shell/zsh/znap-plugins.zsh
 
 source ~/.shell/alias.sh
 source ~/.shell/path.sh
 
-znap eval starship 'starship init zsh'
+source ~/.shell/zsh/functions.zsh
+
 znap prompt
+znap eval starship 'starship init zsh'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

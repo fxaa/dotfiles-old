@@ -9,3 +9,36 @@
 	path = shell/zsh/remote/zsh-snap
 	url = https://github.com/marlonrichert/zsh-snap.git
 	ignore = dirty
+[submodule "zsh-256color"]
+	path = shell/zsh/remote/zsh-256color
+	url = https://github.com/chrissicool/zsh-256color
+[submodule "zsh-async"]
+	path = shell/zsh/remote/zsh-async
+	url = https://github.com/mafredri/zsh-async
+[submodule "zed-zsh"]
+	path = shell/zsh/remote/zed-zsh
+	url = https://github.com/eendroroy/zed-zsh
+[submodule "fz"]
+	path = shell/zsh/remote/fz
+	url = https://github.com/changyuheng/fz
+[submodule "zsh-fzf-history-search"]
+	path = shell/zsh/remote/zsh-fzf-history-search
+	url = https://github.com/joshskidmore/zsh-fzf-history-search
+[submodule "jq-zsh-plugin"]
+	path = shell/zsh/remote/jq-zsh-plugin
+	url = https://github.com/reegnz/jq-zsh-plugin
+[submodule "ssh"]
+	path = shell/zsh/remote/ssh
+	url = https://github.com/zpm-zsh/ssh
+[submodule "fzf-tab"]
+	path = shell/zsh/remote/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
+[submodule "zsh-autosuggestions"]
+	path = shell/zsh/remote/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh-syntax-highlighting"]
+	path = shell/zsh/remote/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "zcolors"]
+	path = shell/zsh/remote/zcolors
+	url = https://github.com/marlonrichert/zcolors
