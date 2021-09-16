@@ -18,6 +18,7 @@
 [submodule "zed-zsh"]
 	path = shell/zsh/remote/zed-zsh
 	url = https://github.com/eendroroy/zed-zsh
+	ignore = dirty
 [submodule "fz"]
 	path = shell/zsh/remote/fz
 	url = https://github.com/changyuheng/fz
